@@ -1,0 +1,217 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+}
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+.maintitle {
+    font-size: 100px;
+}
+
+.cards {
+    width: 100%;
+}
+
+.card {
+    padding-top: 25px;
+    border-radius: 20px !important;
+}
+
+.card img {
+    max-width: 20%;
+    padding-top: 15px;
+
+    filter: invert(100%);
+}
+
+.dashboardCard {
+    box-shadow: 2px 2px 10px #000;
+    border-radius: 5px;
+}
+
+.dashboardCard img {
+    max-width: 35%;
+    filter: invert(100%);
+}
+
+.swordslash img {
+    max-height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.splash {
+    background-image: url('SplashImage.jpg');
+    background-size: cover;
+
+    background-position: center;
+
+    height: 100vh;
+    background-color: black;
+    color: rgb(255, 255, 255); /* Text color */
+}
+
+.splash-content {
+    padding-top: 23%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+/* Sidebar */
+
+.navbar {
+    /* background-color: #323232; */
+    background-image: linear-gradient(rgb(38, 38, 38), rgb(108, 108, 108));
+    /* height: 80px; */
+    font-weight: bold;
+
+    font-style: italic;
+}
+
+.navbar h1 {
+    cursor: default;
+    font-size: 70px;
+    text-shadow: 4px 4px 2px #000000;
+}
+.navbar img {
+    height: 30px;
+    filter: invert(100%);
+}
+
+.navbar img:hover {
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.siteContainer {
+    height: 100vh;
+}
+
+.tableView {
+    width: 75%;
+    border-radius: 10px;
+}
+
+.position-sticky a {
+    text-decoration: none;
+}
+
+.contentSection {
+    margin-left: 240px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-body {
+    height: 250px;
+}
+
+.taskStats img {
+    max-width: 100px;
+}
+.taskDisplay {
+    flex: 1;
+    background-color: #202020;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 3px solid black;
+    padding: 30px 0 0; /* Height of navbar */
+    background-image: linear-gradient(
+        to bottom,
+        rgb(45, 45, 45),
+        rgb(13, 13, 13)
+    );
+    /* background-color: rgb(43, 43, 43); */
+    /* background-image: linear-gradient(rgb(27, 27, 27), rgb(186, 186, 186)); */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+}
+.sidebar h1 {
+    font-size: 40px;
+}
+
+#sidebarMenu a {
+    text-decoration: none;
+}
+.sidebar img {
+    max-width: 120px;
+    text-decoration: none;
+    /* filter: invert(100%); */
+    padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        padding: 0px !important;
+        width: 100%;
+        height: 340px;
+    }
+    .sidebar a {
+        display: block;
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    body {
+        padding-left: 0px;
+        padding-top: 340px;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .navbar img {
+        margin-bottom: 10px;
+    }
+    .contentSection {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        margin-left: 0; /* Adjust margin to 0 on smaller screens */
+    }
+}
+.sidebar .active {
+    border-radius: 5px;
+    background-color: #d9534f !important;
+    border-color: #d9534f !important;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+    position: relative;
+
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@media (max-width: 991.98px) {
+    .dashboardCard {
+        box-shadow: 2px 2px 10px #000;
+        border-radius: 5px;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+        flex-wrap: wrap;
+    }
+    .dashboardCard h3 {
+        font-size: 20px;
+    }
+
+    .dashboardCard img {
+        max-width: 25%;
+    }
+}

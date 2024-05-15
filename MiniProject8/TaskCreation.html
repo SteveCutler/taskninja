@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task Management</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="siteContainer ">
+            <div class="contentSection">
+
+                <nav class="navbar text-light bg-dark bg-gradient pt-3 pb-0 space-between ">
+                    
+                    <h1 class="fw-bold">TASK CREATION</h1>
+                    <div class="buttons">
+                        <img src="Hamburger_icon.png" alt="hamburger menu icon" >
+                        <img class="m-2" src="settingsIcon.svg" alt="settingsIcon">
+                        <img class="m-2" src="ninjaAvatar.svg" alt="ninja avatar icon">
+                    </div>
+                </nav>
+                <div class="taskDisplay d-flex flex-column ">
+                    <div class="d-flex justify-content-around flex-wrap pt-5">
+                        
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                    </div>
+
+                    <div class="pt-5 mt-4 tableView mx-auto">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <nav id="sidebarMenu" class="d-lg-block sidebar">
+                    <div class="position-sticky">
+                        <a href="home.html">
+                                    
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <img src="NI_fuji_clr.png" alt="mt fuji icon">
+                                <div class="d-flex justify-content-center">
+                                    
+                                <h1 class= "text-light fw-lighter" style="text-align: center;">TASK</h1>
+                                <h1 class= "text-danger fw-bold" style="text-align: center; font-weight:bold;">NINJA</h1>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="list-group list-group-flush mx-3 mt-4 border border-5 rounded ">
+                            
+                            <a
+                                href="taskDashboard.html"
+                                class="list-group-item rounded-top text-center list-group-item-action bg-dark text-light py-2 ripple "
+                            >
+                                <i class="fas fa-chart-area fw-bold fa-fw me-3"></i
+                                ><span class="">Dashboard</span>
+                            </a>
+                            <a
+                                href="TaskCreation.html"
+                                class="list-group-item rounded-top text-center list-group-item-action py-2 ripple active hover"
+                                ><i class="fas fa-lock fa-fw me-3"></i
+                                ><span>Add New Task</span></a
+                            >
+                            <!-- <a
+                                href="TaskDetails.html"
+                                class="list-group-item list-group-item-action py-2 ripple"
+                                ><i class="fas fa-chart-line fa-fw me-3"></i
+                                ><span>Task Details</span></a
+                            > -->
+                            
+                            <a
+                                href="TaskHistory.html"
+                                class="list-group-item bg-dark rounded-bottom text-light text-center list-group-item-action py-2 ripple"
+                                ><i class="fas fa-chart-bar fa-fw me-3"></i
+                                ><span>Task History</span> <span class="badge bg-success">NEW</span></a
+                            >
+                            
+                        </div>
+                    </div>
+                </nav>
+    
+                <!-- PAGE CONTENT -->
+                
+                <!-- COLOURD CARDS WITH HIGHLIGHTED STATS-->
+    
+                <!-- H1 TASK LIST-->
+    
+                <!--TABLE,20px PADDING - EACH ROW TASK DATA in WITH DETAILS AND THEN X BUTTON TO DELETE-->
+    
+                <!--END OF PAGE CONTENT-->
+                </div>
+        </div>
+
+            <script src="main.js"></script>
+            <script
+                src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"
+            ></script>
+        </div>
+    </body>
+</html>
